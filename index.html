@@ -3,18 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Rhode</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
-    <form>
+    <button id="Contraste">Contraste</button>
+    <div id="tamanioFuente">
+        <button id="fGrande">A+</button>
+        <button id="fPequenia">A-</button>
+    </div>
+    <section id="contacto">
+        <span>Contacto</span>
+        <h2>Comunicate con RHODE</h2>
+        <form id="form-contacto">
         <label>Nombre</label>
-        <input class="control" type="text" placeholder="Escriba su nombre">
+        <input class="control" type="text" placeholder="Escriba su nombre" required>
+        <p class="noDisplay" id="nombre">Debe escribir un nombre</p>
         <label>Email</label>
-        <input class="control" type="email" placeholder="Escriba su email">
+        <input class="control" type="email" placeholder="Escriba su email" required>
+        <p class="noDisplay" id="nombre">Debe escribir un email</p>
+        <label>Telefono</label>
+        <input class="control" type="tel" placeholder="Escriba su telefono">
+        <p class="noDisplay" id="nombre">Debe escribir un telefono</p>
         <label>Asunto</label>
-        <input class="control" type="text" placeholder="Escriba asunto">
+        <input class="control" type="text" placeholder="Escriba su asunto" required>
+        <p class="noDisplay" id="nombre">Debe escribir un Asunto</p>
+        <label>Mensaje</label>
+        <textarea id="mensaje" rows="3" placeholder="Escriba su mensaje" required></textarea>
+        <p class="noDisplay" id="nombre">Debe escribir un Mensaje</p>
+        <label>Productos de Interes</label>
+        <select id="productos" name="productos">
+            <option value="lip-caramel">Lip Caramel</option>
+            <option value="lip-Cherry">Lip Cherry</option>
+            <option value="lip-Berry">Lip Berry</option>
+        </select>
+        <label>Subcribirse a Newsletter</label>
+        <input class="control" type="checkbox">
+        <label>Genero</label>
+        <div>
+            <input type="radio" id="femenino" name="femenino">
+            <label>Femenino</label>
+            <input type="radio" id="masculino" name="masculino">
+            <label>Femenino</label>
+            <input type="radio" id="otro" name="otro">
+            <label>Otro</label>
+        </div>
+        <button type="button">Enviar</button>
     </form>
-    <a href="#" class="btn">Enviar</a>
+    </section>
     
+   
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
