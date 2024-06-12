@@ -7,51 +7,159 @@
     <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
-    <button id="Contraste">Contraste</button>
-    <div id="tamanioFuente">
-        <button id="fGrande">A+</button>
-        <button id="fPequenia">A-</button>
-    </div>
-    <section id="contacto">
-        <span>Contacto</span>
-        <h2>Comunicate con RHODE</h2>
-        <form id="form-contacto">
-        <label>Nombre</label>
-        <input class="control" type="text" placeholder="Escriba su nombre" required>
-        <p class="noDisplay" id="nombre">Debe escribir un nombre</p>
-        <label>Email</label>
-        <input class="control" type="email" placeholder="Escriba su email" required>
-        <p class="noDisplay" id="nombre">Debe escribir un email</p>
-        <label>Telefono</label>
-        <input class="control" type="tel" placeholder="Escriba su telefono">
-        <p class="noDisplay" id="nombre">Debe escribir un telefono</p>
-        <label>Asunto</label>
-        <input class="control" type="text" placeholder="Escriba su asunto" required>
-        <p class="noDisplay" id="nombre">Debe escribir un Asunto</p>
-        <label>Mensaje</label>
-        <textarea id="mensaje" rows="3" placeholder="Escriba su mensaje" required></textarea>
-        <p class="noDisplay" id="nombre">Debe escribir un Mensaje</p>
-        <label>Productos de Interes</label>
-        <select id="productos" name="productos">
-            <option value="lip-caramel">Lip Caramel</option>
-            <option value="lip-Cherry">Lip Cherry</option>
-            <option value="lip-Berry">Lip Berry</option>
-        </select>
-        <label>Subcribirse a Newsletter</label>
-        <input class="control" type="checkbox">
-        <label>Genero</label>
-        <div>
-            <input type="radio" id="femenino" name="femenino">
-            <label>Femenino</label>
-            <input type="radio" id="masculino" name="masculino">
-            <label>Femenino</label>
-            <input type="radio" id="otro" name="otro">
-            <label>Otro</label>
+    <!--Navbar-->
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" alt="rhode"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#sobrerhode">Sobre Rhode</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><button id="Contraste" class="btnContraste">Contraste</button></li>
+        </ul>
+        <div id="tamanioFuente">
+            <button id="fGrande">A+</button>
+            <button id="fPequenia">A-</button>
         </div>
-        <button type="button">Enviar</button>
-    </form>
+    </header>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Welcome To</span>
+            <h1>RHODE</h1>
+            <h2>Cuidado de la Piel</h2>
+            <a href="#" class="btn">Explorar</a>
+        </div>
+        <div class="home-img">
+            <img src="img/trece.png" alt="productos">
+        </div>
+    </section>
+
+    
+    <section class="productos" id="productos">
+        <div  class="heading">
+            <span>Productos</span>
+            <h2>Comprar Productos</h2>
+        </div>
+        <div class="productos-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/16.jgp.webp">
+                </div>
+                <h2> Lip Fucsia</h2>
+                <span>$25.000</span>
+                <a href="#" class="btn">comprar</a>
+
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/catorce.jpg">
+                </div>
+                <h2> Lip Pink</h2>
+                <span>$25.000</span>
+                <a href="#" class="btn">comprar</a>
+
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/quince.jpg">
+                </div>
+                <h2> Lip Coffee</h2>
+                <span>$25.000</span>
+                <a href="#" class="btn">comprar</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Sobre Rhode-->
+    <section class="sobrerhode" id="sobrerhode">
+        <div class="heading">
+            <span>Sobre Rhode</span>
+            <h2>glazed & good for you</h2>
+        </div>
+        <div class="container">
+            <div class="sobre-img">
+                <img src="img/cinco.webp" alt="mujer">
+            </div>
+            <div class="sobre-texto">
+                <h2>We only have ONE FACE (and ONE WORLD) to PROTECT</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet fugit explicabo ea esse cum recusandae dolorem excepturi eaque quibusdam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet fugit explicabo ea esse cum recusandae dolorem excepturi eaque quibusdam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet fugit explicabo ea esse cum recusandae dolorem excepturi eaque quibusdam?</p>
+                <a href="#" class="btn">Conocenos</a>
+            </div>
+        </div>
+    </section>
+    <!--Sobre-->
+    
+    <!--Contacto-->
+    <section class="form-contacto" id="form-contacto">
+        <div class="heading">
+            <span>Contacto</span>
+            <h1>Contactate con Nosotros</h1>
+        </div>
+
+        <div class="container">
+            <div class="contacto-texto">
+                <form id="formContacto">
+                    <label>Nombre<span>*</span></label>
+                    <input class="control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    <p class="noDisplay" id="pnombre">Debe ingresar un nombre</p>
+                
+                    <label>Email<span>*</span></label>
+                    <input class="control" type="email" id="email" name="email"  placeholder="Ingrese su email" required>
+                    <p class="noDisplay" id="pemail">Debe ingresar un email</p>
+                
+                    <label>Telefono</label>
+                    <input class="control" type="tel" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+                    <p class="noDisplay" id="ptelefono">Debe ingresar 9 numeros</p>
+
+                    <label>Asunto<span>*</span></label>
+                    <input class="control" type="text" id="asunto" name="asunto" placeholder="Escriba su asunto" required>
+                    <p class="noDisplay" id="pasunto">Debe ingresar un asunto</p>
+
+                    <label>Mensaje<span>*</span></label>
+                    <textarea class="control" id="mensaje" name="mensaje" rows="3" placeholder="Escriba su mensaje" required></textarea>
+                    <p class="noDisplay" id="pmensaje">Debe ingresar un mensaje</p>
+
+                    <label>Productos de Interes</label>
+                    <select class="control" id="productos" name="productos">
+                        <option value="lip-caramel">Lip Caramel</option>
+                        <option value="lip-Cherry">Lip Cherry</option>
+                        <option value="lip-Berry">Lip Berry</option>
+                    </select>
+                
+                    <label>Subcribirse a Newsletter</label>
+                    <input class="control" type="checkbox" name="suscripcion"><br>
+                
+                    <label>Genero</label>
+                    <div>
+                        <input type="radio" id="femenino" name="genero" value="fememino">
+                        <label>Femenino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label>Femenino</label>
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        <label>Otro</label>
+                    </div>
+                    <button onclick="validar()" type="button">Enviar</button>
+                </form> 
+            </div>
     </section>
     
+    <section class="contacto" id="contacto">
+        <div class="social">
+            <a href="https://web.facebook.com/rhode/"><img src="img/fb.png" alt="fb"></a>
+            <a href="https://x.com/skinbyrhode"><img src="img/tw.png" alt="tw"></a>
+            <a href="https://www.instagram.com/rhode/"><img src="img/ig.png" alt="ig"></a>
+        </div>
+        <p>&#169; RHODE 2024.</p>
+    </section>
    
     <script src="assets/js/main.js"></script>
 </body>
