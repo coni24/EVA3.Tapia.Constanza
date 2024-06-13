@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhode</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
+    <script type="module" src="./assets/js/firebase.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
 </head>
 <body>
     <!--Navbar-->
@@ -136,21 +138,41 @@
                     </select>
                 
                     <label>Subcribirse a Newsletter</label>
-                    <input class="control" type="checkbox" name="suscripcion"><br>
+                    <input class="control" type="checkbox" name="suscripcion">
                 
                     <label>Genero</label>
                     <div>
                         <input type="radio" id="femenino" name="genero" value="fememino">
                         <label>Femenino</label>
                         <input type="radio" id="masculino" name="genero" value="masculino">
-                        <label>Femenino</label>
+                        <label>Masculino</label>
                         <input type="radio" id="otro" name="genero" value="otro">
                         <label>Otro</label>
                     </div>
-                    <button onclick="validar()" type="button">Enviar</button>
+                    <button class="btn" onclick="validar()" type="button">Registrar</button>
+                    
                 </form> 
             </div>
     </section>
+
+    <section>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Asunto</th>
+                    <th>Mensaje</th>
+                    <th>Productos de Interes</th>
+                    <th>Subcribirse</th>
+                    <th>Genero</th> 
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla"></tbody>
+        </table>
+    </section>
+
     
     <section class="contacto" id="contacto">
         <div class="social">
@@ -162,5 +184,6 @@
     </section>
    
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

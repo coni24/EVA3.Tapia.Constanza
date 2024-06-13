@@ -356,10 +356,27 @@ body.oscuro{
     color: pink;
 }
 
+th,td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid pink;
+}
 
+.btnContraste{
+    padding: 3px 5px;
+    border: 1px solid var(--color-texto);
+    border-radius: 20px;
+    color: var(--color-texto);
+    font-weight: 500;
+}
 
-
-
+#fGrande, #fPequenia{
+    padding: 3px 5px;
+    border: 1px solid var(--color-texto);
+    border-radius: 20px;
+    color: var(--color-texto);
+    font-weight: 500;
+}
 
 
 
