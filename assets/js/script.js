@@ -105,7 +105,7 @@ const cargarDatos = () => {
         console.error("Error al cargar datos:", error);
     });
 };
-//funcion editar datos ingresados por el usaurio
+//funcion editar datos ingresados por el usuario
 const editar = () => {
     let eNombre = document.getElementById("nombre");
     let eEmail = document.getElementById("email");
